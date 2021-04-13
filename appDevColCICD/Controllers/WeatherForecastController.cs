@@ -31,6 +31,8 @@ namespace appDevColCICD.Controllers
             {
                 Date = DateTime.Now.AddDays(index),
                 TemperatureCelsius = rng.Next(-20, 55),
+
+
                 Summary = Summaries[rng.Next(Summaries.Length)]
             })
             .ToArray();
